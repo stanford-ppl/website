@@ -1,0 +1,38 @@
+img#retreat-photo {
+  width: 800px;
+}
+
+table.retreat-schedule {
+  border: 1px solid black;
+  table-layout: auto;
+}
+
+table.retreat-schedule td.retreat-time {
+  width: 170px;
+  text-align: center;
+}
+
+span.retreat-poster-title {
+  font-weight: bold;
+}
+/*
+     FILE ARCHIVED ON 00:34:15 Mar 11, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:13:53 Aug 27, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 109.43 (3)
+  esindex: 0.015
+  captures_list: 131.699
+  CDXLines.iter: 15.433 (3)
+  PetaboxLoader3.datanode: 49.798 (5)
+  exclusion.robots: 0.268
+  exclusion.robots.policy: 0.242
+  RedisCDXSource: 1.548
+  PetaboxLoader3.resolve: 356.358 (3)
+  load_resource: 375.603
+*/
