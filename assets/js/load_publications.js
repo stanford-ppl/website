@@ -10,10 +10,23 @@ $(function() {
         PLDI: "Programming Language Design and Implementation (PLDI)",
         ASPLOS: "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",
         PLARCH: "Workshop: Programming Languages for Architecture (PLArch)",
-        YARCH: "Young Architect Workshop (YArch)"
+        YARCH: "Young Architect Workshop (YArch)",
+        OSDI: "USENIX Symposium on Operating Systems Design and Implementation (OSDI)"
     }
 
     let publications = [
+        {
+            title: "Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents",
+            authors: "Qizheng Zhang, Ali Imran, Enkeleda Bardhi, Tushar Swamy, Nathan Zhang, Muhammad Shahbaz, and Kunle Olukotun",
+            venue: venues.OSDI,
+            year: 2024,
+            pdfs: [
+                {
+                    title: "Proceedings",
+                    url: "https://www.usenix.org/conference/osdi24/presentation/zhang-qizheng"
+                }
+            ]
+        },
         {
             title: "The Dataflow Abstract Machine Simulator Framework",
             authors: "Nathan Zhang, Rubens Lacouture, Gina Sohn, Paul Mure, Qizheng Zhang, Fredrik Kjolstad, and Kunle Olukotun",
