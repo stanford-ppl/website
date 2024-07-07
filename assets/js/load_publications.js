@@ -70,10 +70,6 @@ $(function() {
             venue: venues.YARCH,
             year: 2024,
             pdfs: [
-                {
-                    title: "PDF",
-                    url: "/papers/yarch24_dynamicmem.pdf"
-                }
             ]
         },
         {
