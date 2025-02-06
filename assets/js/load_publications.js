@@ -22,10 +22,11 @@ $(function() {
             year: 2024,
             pdfs: [
                 {
-                    title: "Proceedings",
-                    url: "https://www.usenix.org/conference/osdi24/presentation/zhang-qizheng"
+                    title: "PDF",
+                    url: "/papers/caravan-osdi24.pdf"
                 }
-            ]
+            ],
+            awards: ["SRC JUMP 2.0 Best Paper Award"]
         },
         {
             title: "The Dataflow Abstract Machine Simulator Framework",
