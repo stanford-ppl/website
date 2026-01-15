@@ -10,9 +10,21 @@
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
+  <style>
+    /* Force the article to be visible */
+    #main article {
+      display: block !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    body.is-article-visible #main {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
 </head>
 
-<body>
+<body class="is-article-visible">
   <!-- Wrapper -->
   <div id="wrapper">
 
