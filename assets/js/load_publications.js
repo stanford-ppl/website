@@ -11,10 +11,100 @@ $(function() {
         ASPLOS: "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",
         PLARCH: "Workshop: Programming Languages for Architecture (PLArch)",
         YARCH: "Young Architect Workshop (YArch)",
-        OSDI: "USENIX Symposium on Operating Systems Design and Implementation (OSDI)"
+        OSDI: "USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
+        CGO: "ACM/IEEE International Symposium on Code Generation and Optimization (CGO)",
+        ARXIV: "arXiv preprint"
     }
 
     let publications = [
+        {
+            title: "Streaming Tensor Program: A streaming abstraction for dynamic parallelism",
+            authors: "Gina Sohn, Genghan Zhang, Konstantin Hossfeld, Jungwoo Kim, Nathan Sobotka, Nathan Zhang, Olivia Hsu, Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2511.07776"
+                }
+            ]
+        },
+        {
+            title: "Cyclotron: Compilation of Recurrences to Distributed and Systolic Architectures",
+            authors: "Shiv Sundram, Akhilesh Balasingam, Nathan Zhang, Kunle Olukotun, Fredrik Kjolstad",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2511.09987"
+                }
+            ]
+        },
+        {
+            title: "FuseFlow: A Fusion-Centric Compilation Framework for Sparse Deep Learning on Streaming Dataflow",
+            authors: "Rubens Lacouture, Nathan Zhang, Ritvik Sharma, Marco Siracusa, Fredrik Kjolstad, Kunle Olukotun, Olivia Hsu",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2511.04768"
+                }
+            ]
+        },
+        {
+            title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+            authors: "Qizheng Zhang, Changran Hu, Shubhangi Upasani, Boyuan Ma, Fenglu Hong, Vamsidhar Kamanuru, Jay Rainton, Chen Wu, Mengmeng Ji, Hanchen Li, Urmish Thakker, James Zou, Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2510.04618"
+                }
+            ]
+        },
+        {
+            title: "Stardust: Compiling Sparse Tensor Algebra to a Reconfigurable Dataflow Architecture",
+            authors: "Olivia Hsu, Alexander Rucker, Tian Zhao, Varun Desai, Kunle Olukotun, Fredrik Kjolstad",
+            venue: venues.CGO,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "Proceedings",
+                    url: "https://dl.acm.org/doi/10.1145/3696443.3708918"
+                },
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2211.03251"
+                }
+            ]
+        },
+        {
+            title: "DFModel: Design Space Optimization of Large-Scale Systems Exploiting Dataflow Mappings",
+            authors: "Sho Ko, Nathan Zhang, Olivia Hsu, Ardavan Pedram, Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2024,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2412.16432"
+                }
+            ]
+        },
+        {
+            title: "Implementing and Optimizing the Scaled Dot-Product Attention on Streaming Dataflow",
+            authors: "Gina Sohn, Nathan Zhang, Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2024,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2404.16629"
+                }
+            ]
+        },
         {
             title: "Caravan: Practical Online Learning of In-Network ML Models with Labeling Agents",
             authors: "Qizheng Zhang, Ali Imran, Enkeleda Bardhi, Tushar Swamy, Nathan Zhang, Muhammad Shahbaz, and Kunle Olukotun",
