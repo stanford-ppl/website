@@ -38,6 +38,16 @@
     header .content .inner {
       max-width: 100%;
     }
+    /* Fix article title overflow */
+    article h2.major {
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+    /* Ensure image is fully opaque */
+    article img {
+      opacity: 1 !important;
+    }
   </style>
 </head>
 
