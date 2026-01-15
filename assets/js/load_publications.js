@@ -67,7 +67,7 @@ $(function() {
         },
         {
             title: "Agentic Plan Caching: A Test-Time Memory for LLM Agents",
-            authors: "Qizheng Zhang, Kunle Olukotun",
+            authors: "Qizheng Zhang, Michael Wornow, Kunle Olukotun",
             venue: venues.ARXIV,
             year: 2025,
             pdfs: [
