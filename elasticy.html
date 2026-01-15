@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Elasticy - Stanford Pervasive Parallelism Lab</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body>
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <span class="icon fa-microchip"></span>
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h1>Elasticy: A Dynamic Runtime-Reconfigurable Dataflow Accelerator</h1>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Back to Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Elasticy -->
+      <article id="elasticy" class="active">
+        <h2 class="major">Elasticy</h2>
+        <span class="image main"><img src="images/elasticy.png" alt="Elasticy Architecture" /></span>
+
+        <p>Recent data-intensive workloads have been expressing growing degrees of data-dependent dynamism. This includes, but is not limited to, state-of-the-art large language models, which increasingly use mixture-of-experts models to scale without a proportional increase in computation. Prior systems, including GPUs and reconfigurable dataflow accelerators (RDAs), struggle to exploit this dynamism efficiently, resulting in added memory traffic and compute underutilization due to extensive use of padding, predication and kernel-by-kernel execution. This problem exists throughout the stack: Program representations and compilers fail to preserve dynamic program characteristics, and state-of-the-art hardware cannot exploit it. To address this gap, we are developing a novel dynamic software stack, consisting of a dynamic tensor streaming programs IR (STeP) and Elasticy, a compiler and fabric designed for high dynamic workload performance.</p>
+
+        <p>The Elasticy Fabric executes dynamic applications spatially in a dataflow fashion. To support the types of dynamism present in recent workloads, Elasticy includes a novel runtime scheduler designed to maximize utilization of the fabric, a memory system that handles unbounded and dynamically sized tensors, and special compute units to support the dynamic tensor operations expressed in STeP without concretizing the dynamic dimensions.</p>
+
+        <p>Elasticy comes with full compiler support so that programs expressed in STeP can be executed on the fabric.</p>
+
+      </article>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; Stanford Pervasive Parallelism Lab | Design: <a href="https://html5up.net">HTML5 UP</a></p>
+    </footer>
+
+  </div>
+
+  <!-- BG -->
+  <div id="bg"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
