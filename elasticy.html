@@ -77,7 +77,15 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Removed main.js to prevent modal behavior on standalone page -->
+  <script>
+    // Force article to be visible on load
+    $(document).ready(function() {
+      $('body').addClass('is-article-visible');
+      $('#main').fadeIn(350);
+      $('#elasticy').addClass('active').show();
+    });
+  </script>
 </body>
 
 </html>
