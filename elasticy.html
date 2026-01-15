@@ -11,38 +11,31 @@
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
   <style>
-    /* Force the article to be visible */
-    #main article {
+    /* Project-style modal view (centered card + close "X") */
+    body.project-article #wrapper {
+      justify-content: center;
+      padding-top: 4rem; /* keep the same overall spacing as theme */
+      padding-bottom: 4rem;
+    }
+
+    body.project-article #footer {
+      display: none;
+    }
+
+    /* Standalone page, but let the theme's .active transition animate the open */
+    body.project-article #main article {
       display: block !important;
-      opacity: 1 !important;
-      transform: none !important;
-    }
-    body.is-article-visible #main {
-      opacity: 1 !important;
-      transform: none !important;
-    }
-    /* Prevent title overflow */
-    header .content .inner h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      white-space: normal;
-      word-wrap: break-word;
-    }
-    header .content .inner p {
-      font-size: 1rem;
-      margin: 0;
-      opacity: 0.8;
-      white-space: normal;
-      word-wrap: break-word;
-    }
-    header .content .inner {
-      max-width: 100%;
     }
     /* Fix article title overflow */
     article h2.major {
       white-space: normal !important;
       word-wrap: break-word !important;
       overflow-wrap: break-word !important;
+      overflow-wrap: anywhere !important;
+      word-break: break-word !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      box-sizing: border-box;
     }
     /* Ensure image is fully opaque */
     article img {
@@ -51,35 +44,19 @@
   </style>
 </head>
 
-<body class="is-article-visible">
+<body class="project-article">
   <!-- Wrapper -->
   <div id="wrapper">
-
-    <!-- Header -->
-    <header id="header">
-      <div class="logo">
-        <span class="icon fa-microchip"></span>
-      </div>
-      <div class="content">
-        <div class="inner">
-          <h1>Elasticy</h1>
-          <p>A Dynamic Runtime-Reconfigurable Dataflow Accelerator</p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Back to Home</a></li>
-        </ul>
-      </nav>
-    </header>
 
     <!-- Main -->
     <div id="main">
 
       <!-- Elasticy -->
-      <article id="elasticy" class="active">
+      <article id="elasticy">
+        <div class="close">Close</div>
         <span class="image main"><img src="images/elasticy.png" alt="Elasticy Architecture" /></span>
         <h2 class="major">Elasticy: A Dynamic Runtime-Reconfigurable Dataflow Accelerator</h2>
+        <p><strong>People:</strong> Konstantin Hossfeld, Nathan Sobotka <em>(equal contribution)</em></p>
 
         <p>Recent data-intensive workloads have been expressing growing degrees of data-dependent dynamism. This includes, but is not limited to, state-of-the-art large language models, which increasingly use mixture-of-experts models to scale without a proportional increase in computation. Prior systems, including GPUs and reconfigurable dataflow accelerators (RDAs), struggle to exploit this dynamism efficiently, resulting in added memory traffic and compute underutilization due to extensive use of padding, predication and kernel-by-kernel execution. This problem exists throughout the stack: Program representations and compilers fail to preserve dynamic program characteristics, and state-of-the-art hardware cannot exploit it. To address this gap, we are developing a novel dynamic software stack, consisting of a dynamic tensor streaming programs IR (STeP) and Elasticy, a compiler and fabric designed for high dynamic workload performance.</p>
 
@@ -109,9 +86,26 @@
   <script>
     // Force article to be visible on load
     $(document).ready(function() {
-      $('body').addClass('is-article-visible');
-      $('#main').fadeIn(350);
-      $('#elasticy').addClass('active').show();
+      var $article = $('#elasticy');
+
+      // Ensure we're starting from the "closed" visual state, then animate to active.
+      $article.removeClass('active').show();
+      window.requestAnimationFrame(function() {
+        $article.addClass('active');
+      });
+
+      // Close "X" should return to where you came from (projects page), with a safe fallback.
+      $('#elasticy .close').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (document.referrer && window.history.length > 1) {
+          window.history.back();
+          return;
+        }
+
+        window.location.href = 'index.html#projects';
+      });
     });
   </script>
 </body>
