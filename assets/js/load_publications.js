@@ -66,6 +66,18 @@ $(function() {
             ]
         },
         {
+            title: "Agentic Plan Caching: A Test-Time Memory for LLM Agents",
+            authors: "Qizheng Zhang, Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2506.14852"
+                }
+            ]
+        },
+        {
             title: "Stardust: Compiling Sparse Tensor Algebra to a Reconfigurable Dataflow Architecture",
             authors: "Olivia Hsu, Alexander Rucker, Tian Zhao, Varun Desai, Kunle Olukotun, Fredrik Kjolstad",
             venue: venues.CGO,
