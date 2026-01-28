@@ -8,7 +8,7 @@ $(function() {
         HPCA: "International Symposium on High-Performance Computer Architecture (HPCA)",
         ISCA: "International Symposium on Computer Architecture (ISCA)",
         PLDI: "Programming Language Design and Implementation (PLDI)",
-        ASPLOS: "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",
+        ASPLOS: "ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)",
         PLARCH: "Workshop: Programming Languages for Architecture (PLArch)",
         YARCH: "Young Architect Workshop (YArch)",
         OSDI: "USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
