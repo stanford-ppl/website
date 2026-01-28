@@ -85,11 +85,15 @@ $(function() {
             year: 2025,
             pdfs: [
                 {
-                    title: "ICML",
+                    title: "Proceedings",
+                    url: "https://proceedings.mlr.press/v267/zhang25at.html"
+                },
+                {
+                    title: "arXiv",
                     url: "https://arxiv.org/pdf/2502.02534"
                 }
             ]
-        }
+        },
         {
             title: "Agentic Plan Caching: A Test-Time Memory for LLM Agents",
             authors: "Qizheng Zhang, Michael Wornow, Kunle Olukotun",
