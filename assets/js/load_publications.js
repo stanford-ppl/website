@@ -21,18 +21,6 @@ $(function() {
 
     let publications = [
         {
-            title: "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
-            authors: "Genghan Zhang, Shaowei Zhu, Anjiang Wei, Zhenyu Song, Allen Nie, Zhen Jia, Nandita Vijaykumar, Yida Wang, and Kunle Olukotun",
-            venue: venues.ARXIV,
-            year: 2025,
-            pdfs: [
-                {
-                    title: "arXiv",
-                    url: "https://arxiv.org/pdf/2511.15915"
-                }
-            ]
-        },
-        {
             title: "Streaming Tensor Programs: A streaming abstraction for dynamic parallelism",
             authors: "Gina Sohn, Genghan Zhang, Konstantin Hossfeld, Jungwoo Kim, Nathan Sobotka, Nathan Zhang, Olivia Hsu, Kunle Olukotun",
             venue: venues.ASPLOS,
@@ -77,6 +65,18 @@ $(function() {
                 {
                     title: "arXiv",
                     url: "https://arxiv.org/abs/2510.04618"
+                }
+            ]
+        },
+        {
+            title: "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
+            authors: "Genghan Zhang, Shaowei Zhu, Anjiang Wei, Zhenyu Song, Allen Nie, Zhen Jia, Nandita Vijaykumar, Yida Wang, and Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/pdf/2511.15915"
                 }
             ]
         },
