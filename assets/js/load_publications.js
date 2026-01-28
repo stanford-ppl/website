@@ -21,7 +21,7 @@ $(function() {
 
     let publications = [
         {
-            title: "Streaming Tensor Programs: A streaming abstraction for dynamic parallelism",
+            title: "Streaming Tensor Programs: A Streaming Abstraction for Dynamic Parallelism",
             authors: "Gina Sohn, Genghan Zhang, Konstantin Hossfeld, Jungwoo Kim, Nathan Sobotka, Nathan Zhang, Olivia Hsu, Kunle Olukotun",
             venue: venues.ASPLOS,
             year: 2026,
