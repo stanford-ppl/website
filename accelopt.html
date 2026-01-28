@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>AccelOpt - Stanford Pervasive Parallelism Lab</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+  <style>
+    /* Project-style modal view (centered card + close "X") */
+    body.project-article #wrapper {
+      justify-content: center;
+      padding-top: 4rem; /* keep the same overall spacing as theme */
+      padding-bottom: 4rem;
+    }
+
+    body.project-article #footer {
+      display: none;
+    }
+
+    /* Standalone page, but let the theme's .active transition animate the open */
+    body.project-article #main article {
+      display: block !important;
+    }
+    /* Fix article title overflow */
+    article h2.major {
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      overflow-wrap: anywhere !important;
+      word-break: break-word !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    /* Ensure image is fully opaque */
+    article img {
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+
+<body class="project-article">
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- AccelOpt -->
+      <article id="AccelOpt">
+        <div class="close">Close</div>
+        <span class="image main"><img src="images/accelopt-main-method-with-fixer.png" alt="AccelOpt Architecture" /></span>
+        
+        <h2 class="major">AccelOpt</h2>
+        <p><strong>Our goal is build autonomous coding agents that ship silicon to intelligence.</strong></p>
+
+        <h3>Papers</h3>
+        <ul>
+          <li>
+            <a href="https://arxiv.org/pdf/2502.02534" target="_blank">Adaptive Self-improvement LLM Agentic System for ML Library Development</a> 
+            <strong>ICML 2025</strong>
+          </li>
+          <li>
+            <a href="https://arxiv.org/pdf/2511.15915" target="_blank">AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization</a>
+          </li>
+        </ul>
+
+        <h3>Blogs</h3>
+        <ul>
+          <li>
+            <a href="https://zhang677.github.io/blog_md/accelopt.html" target="_blank">AccelOpt: Democratizing AI Accelerator Programming with Self-Improving LLM Agents</a>
+          </li>
+          <li>
+            <a href="https://zhang677.github.io/blog_md/accelopt-p2.html" target="_blank">AccelOpt+Fixer for Triton on H100</a>
+          </li>
+        </ul>
+
+      </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; Stanford Pervasive Parallelism Lab | Design: <a href="https://html5up.net">HTML5 UP</a></p>
+    </footer>
+
+  </div>
+
+  <!-- BG -->
+  <div id="bg"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!-- Removed main.js to prevent modal behavior on standalone page -->
+  <script>
+    // Force article to be visible on load
+    $(document).ready(function() {
+      var $article = $('#AccelOpt');
+
+      // Ensure we're starting from the "closed" visual state, then animate to active.
+      $article.removeClass('active').show();
+      window.requestAnimationFrame(function() {
+        $article.addClass('active');
+      });
+
+      // Close "X" should return to where you came from (projects page), with a safe fallback.
+      $('#AccelOpt .close').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (document.referrer && window.history.length > 1) {
+          window.history.back();
+          return;
+        }
+
+        window.location.href = 'index.html#projects';
+      });
+    });
+  </script>
+</body>
+
+</html>
