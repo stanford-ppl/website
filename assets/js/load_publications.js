@@ -14,7 +14,9 @@ $(function() {
         OSDI: "USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
         CGO: "ACM/IEEE International Symposium on Code Generation and Optimization (CGO)",
         ARXIV: "arXiv preprint",
-        ICML: "International Conference on Machine Learning (ICML)"
+        ICML: "International Conference on Machine Learning (ICML)",
+        NeurIPS: "Annual Conference on Neural Information Processing Systems (NeurIPS)",
+        ICLR: "International Conference on Learning Representations (ICLR)"
     }
 
     let publications = [
@@ -33,8 +35,8 @@ $(function() {
         {
             title: "Streaming Tensor Programs: A streaming abstraction for dynamic parallelism",
             authors: "Gina Sohn, Genghan Zhang, Konstantin Hossfeld, Jungwoo Kim, Nathan Sobotka, Nathan Zhang, Olivia Hsu, Kunle Olukotun",
-            venue: venues.ARXIV,
-            year: 2025,
+            venue: venues.ASPLOS,
+            year: 2026,
             pdfs: [
                 {
                     title: "arXiv",
@@ -57,8 +59,8 @@ $(function() {
         {
             title: "FuseFlow: A Fusion-Centric Compilation Framework for Sparse Deep Learning on Streaming Dataflow",
             authors: "Rubens Lacouture, Nathan Zhang, Ritvik Sharma, Marco Siracusa, Fredrik Kjolstad, Kunle Olukotun, Olivia Hsu",
-            venue: venues.ARXIV,
-            year: 2025,
+            venue: venues.ASPLOS,
+            year: 2026,
             pdfs: [
                 {
                     title: "arXiv",
@@ -69,12 +71,24 @@ $(function() {
         {
             title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
             authors: "Qizheng Zhang, Changran Hu, Shubhangi Upasani, Boyuan Ma, Fenglu Hong, Vamsidhar Kamanuru, Jay Rainton, Chen Wu, Mengmeng Ji, Hanchen Li, Urmish Thakker, James Zou, Kunle Olukotun",
-            venue: venues.ARXIV,
-            year: 2025,
+            venue: venues.ICLR,
+            year: 2026,
             pdfs: [
                 {
                     title: "arXiv",
                     url: "https://arxiv.org/abs/2510.04618"
+                }
+            ]
+        },
+        {
+            title: "Agentic Plan Caching: A Test-Time Memory for LLM Agents",
+            authors: "Qizheng Zhang, Michael Wornow, Kunle Olukotun",
+            venue: venues.NeurIPS,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2506.14852"
                 }
             ]
         },
@@ -91,18 +105,6 @@ $(function() {
                 {
                     title: "arXiv",
                     url: "https://arxiv.org/pdf/2502.02534"
-                }
-            ]
-        },
-        {
-            title: "Agentic Plan Caching: A Test-Time Memory for LLM Agents",
-            authors: "Qizheng Zhang, Michael Wornow, Kunle Olukotun",
-            venue: venues.ARXIV,
-            year: 2025,
-            pdfs: [
-                {
-                    title: "arXiv",
-                    url: "https://arxiv.org/abs/2506.14852"
                 }
             ]
         },
