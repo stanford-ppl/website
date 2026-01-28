@@ -13,10 +13,23 @@ $(function() {
         YARCH: "Young Architect Workshop (YArch)",
         OSDI: "USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
         CGO: "ACM/IEEE International Symposium on Code Generation and Optimization (CGO)",
-        ARXIV: "arXiv preprint"
+        ARXIV: "arXiv preprint",
+        ICML: "International Conference on Machine Learning (ICML)"
     }
 
     let publications = [
+        {
+            title: "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
+            authors: "Genghan Zhang, Shaowei Zhu, Anjiang Wei, Zhenyu Song, Allen Nie, Zhen Jia, Nandita Vijaykumar, Yida Wang, and Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/pdf/2511.15915"
+                }
+            ]
+        },
         {
             title: "Streaming Tensor Programs: A streaming abstraction for dynamic parallelism",
             authors: "Gina Sohn, Genghan Zhang, Konstantin Hossfeld, Jungwoo Kim, Nathan Sobotka, Nathan Zhang, Olivia Hsu, Kunle Olukotun",
@@ -65,6 +78,18 @@ $(function() {
                 }
             ]
         },
+        {
+            title: "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+            authors: "Genghan Zhang, Weixin Liang, Olivia Hsu, and Kunle Olukotun",
+            venue: venues.ICML,
+            year: 2025,
+            pdfs: [
+                {
+                    title: "ICML",
+                    url: "https://arxiv.org/pdf/2502.02534"
+                }
+            ]
+        }
         {
             title: "Agentic Plan Caching: A Test-Time Memory for LLM Agents",
             authors: "Qizheng Zhang, Michael Wornow, Kunle Olukotun",
