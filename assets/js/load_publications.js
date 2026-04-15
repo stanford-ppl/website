@@ -16,7 +16,8 @@ $(function() {
         ARXIV: "arXiv preprint",
         ICML: "International Conference on Machine Learning (ICML)",
         NeurIPS: "Annual Conference on Neural Information Processing Systems (NeurIPS)",
-        ICLR: "International Conference on Learning Representations (ICLR)"
+        ICLR: "International Conference on Learning Representations (ICLR)",
+        MLSys: "Annual Conference on Machine Learning and Systems (MLSys)"
     }
 
     let publications = [
@@ -71,8 +72,8 @@ $(function() {
         {
             title: "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
             authors: "Genghan Zhang, Shaowei Zhu, Anjiang Wei, Zhenyu Song, Allen Nie, Zhen Jia, Nandita Vijaykumar, Yida Wang, and Kunle Olukotun",
-            venue: venues.ARXIV,
-            year: 2025,
+            venue: venues.MLSys,
+            year: 2026,
             pdfs: [
                 {
                     title: "arXiv",
