@@ -22,6 +22,18 @@ $(function() {
 
     let publications = [
         {
+            title: "Sieve: Dynamic Expert-Aware PIM Acceleration for Evolving Mixture-of-Experts Models",
+            authors: "Jungwoo Kim, Rubens Lacouture, Genghan Zhang, Gina Sohn, Qizheng Zhang, Swapnil Gandhi, Christos Kozyrakis, Kunle Olukotun",
+            venue: venues.ARXIV,
+            year: 2026,
+            pdfs: [
+                {
+                    title: "arXiv",
+                    url: "https://arxiv.org/abs/2605.11277"
+                }
+            ]
+        },
+        {
             title: "Streaming Tensor Programs: A Streaming Abstraction for Dynamic Parallelism",
             authors: "Gina Sohn, Genghan Zhang, Konstantin Hossfeld, Jungwoo Kim, Nathan Sobotka, Nathan Zhang, Olivia Hsu, Kunle Olukotun",
             venue: venues.ASPLOS,
